@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+  </head>
+  <Style>
+    #btn{
+      background-color: rgb(35, 245, 245);
+    }
+    .main_div{
+      display: flex;
+      flex-direction: row;
+      justify-content:space-around;
+      margin-top: 50px;
+    }
+    .inner_div{
+      display: flex;
+      /* justify-content: space-around; */
+      flex-direction: row;
+      align-items: center;
+    }
+    .img{
+      width:40px;
+      height:40px;
+    }
+    .btn{
+      width: 40px;
+      height: 30px;
+    }
+    .all{
+      margin: 40px;
+    }
+  </Style>
+  <body>
+    <div class="main_div">
+      <div class="left">
+        <h1>Task List...</h1>
+        <div id="todolist">
+
+        </div>
+      </div>
+      <div class="right">
+        <h1>Task Form...</h1>
+        <form action="/save" method="post" enctype="multipart/form-data">
+          <input required type="text" name="task" placeholder="Task name....">
+          <input required type="file" name="pic">
+          <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
